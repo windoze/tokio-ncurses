@@ -1,0 +1,13 @@
+[package]
+name = "tokio-ncurses"
+version = "0.1.0"
+authors = ["Chen Xu <windoze@0d0a.com>"]
+edition = "2018"
+
+[dependencies]
+ncurses = { version = "5", default-features = false }
+libc = { version = "0.2", default-features = false }
+tokio = { version = "1", features = ["net", "sync", "parking_lot"], default-features = false }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["full"] }
